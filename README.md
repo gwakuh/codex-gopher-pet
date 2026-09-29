@@ -19,9 +19,8 @@ On macOS or Linux, download the two pet files directly:
 ```sh
 pet_dir="${CODEX_HOME:-$HOME/.codex}/pets/gopher"
 mkdir -p "$pet_dir"
-for file in pet.json spritesheet.webp; do
-  curl -fsSL "https://raw.githubusercontent.com/gwakuh/codex-gopher-pet/main/$file" -o "$pet_dir/$file"
-done
+curl -fsSL https://raw.githubusercontent.com/gwakuh/codex-gopher-pet/main/pet.json -o "$pet_dir/pet.json"
+curl -fsSL https://raw.githubusercontent.com/gwakuh/codex-gopher-pet/main/spritesheet.webp -o "$pet_dir/spritesheet.webp"
 ```
 
 Both methods install `pet.json` and `spritesheet.webp` under `~/.codex/pets/gopher` by default. Set `CODEX_HOME` if Codex uses another home directory. On Windows, the default path is `%USERPROFILE%\.codex\pets\gopher\`.
