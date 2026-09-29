@@ -2,10 +2,6 @@
 
 A plush cyan Go gopher with animated actions and 16 look directions for Codex.
 
-Blink preview at Codex playback speed:
-
-![Blink animation preview](blinking-preview.gif)
-
 ![Jump animation preview](jumping-preview.gif)
 
 ## Install with npm
