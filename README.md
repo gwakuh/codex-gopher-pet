@@ -1,23 +1,31 @@
-# Codex Gopher Pet
+# Gopher for Codex
 
-A plush cyan Go gopher pet for Codex, packaged as an animated v2 sprite sheet.
+A plush cyan Go gopher with animated actions and 16 look directions for Codex.
 
 ![Jump animation preview](jumping-preview.gif)
 
-## Install
+## Install with npm
 
-Requires Codex desktop with custom pets enabled. Run:
-
-```sh
-mkdir -p ~/.codex/pets && git clone --depth 1 https://github.com/gwakuh/codex-gopher-pet.git ~/.codex/pets/gopher
-```
-
-Restart or refresh Codex, then select **Gopher** in the pet settings.
-
-To remove it:
+Requires Node.js and npm. Works on macOS, Linux, and Windows:
 
 ```sh
-rm -r ~/.codex/pets/gopher
+npx --yes github:gwakuh/codex-gopher-pet
 ```
 
-On Windows, copy `pet.json` and `spritesheet.webp` into `%USERPROFILE%\.codex\pets\gopher\`.
+## Install from the terminal
+
+On macOS or Linux, download the two pet files directly:
+
+```sh
+pet_dir="${CODEX_HOME:-$HOME/.codex}/pets/gopher"
+mkdir -p "$pet_dir"
+for file in pet.json spritesheet.webp; do
+  curl -fsSL "https://raw.githubusercontent.com/gwakuh/codex-gopher-pet/main/$file" -o "$pet_dir/$file"
+done
+```
+
+Both methods install `pet.json` and `spritesheet.webp` under `~/.codex/pets/gopher` by default. Set `CODEX_HOME` if Codex uses another home directory. On Windows, the default path is `%USERPROFILE%\.codex\pets\gopher\`.
+
+Restart Codex, then select **Gopher** in Settings → Pets. Run the same install command again to update it.
+
+To remove it, delete the `gopher` folder from your Codex `pets` directory.
