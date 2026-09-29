@@ -1,0 +1,7 @@
+{
+  "id": "gopher",
+  "displayName": "Gopher",
+  "description": "A plush cyan Go gopher with curious eyes and buck teeth.",
+  "spriteVersionNumber": 2,
+  "spritesheetPath": "spritesheet.webp"
+}
