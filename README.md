@@ -2,16 +2,18 @@
 
 A plush cyan Go gopher with animated actions and 16 look directions for Codex.
 
-<p>
+<p align="center">
   <img src="idle-preview.gif" width="96" alt="Idle animation">
-  <img src="running-right-preview.gif" width="96" alt="Run right animation">
-  <img src="running-left-preview.gif" width="96" alt="Run left animation">
   <img src="waving-preview.gif" width="96" alt="Wave animation">
   <img src="jumping-preview.gif" width="96" alt="Jump animation">
   <img src="failed-preview.gif" width="96" alt="Failed animation">
+</p>
+<p align="center">
+  <img src="running-left-preview.gif" width="96" alt="Run left animation">
   <img src="waiting-preview.gif" width="96" alt="Wait animation">
   <img src="running-preview.gif" width="96" alt="Working animation">
   <img src="review-preview.gif" width="96" alt="Review animation">
+  <img src="running-right-preview.gif" width="96" alt="Run right animation">
 </p>
 
 ## Install with npm
