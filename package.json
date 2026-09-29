@@ -1,0 +1,13 @@
+{
+  "name": "codex-gopher-pet",
+  "version": "1.0.0",
+  "private": true,
+  "bin": {
+    "codex-gopher-pet": "./install.js"
+  },
+  "files": [
+    "install.js",
+    "pet.json",
+    "spritesheet.webp"
+  ]
+}
